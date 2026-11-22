@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>前沿简报 · 第1期 · 2026-11-22</title>
+<style>
+:root{--blue:#2563eb;--dark:#14365c;--ink:#1f2933;--muted:#5b6b7b;--line:#e3e9f0;--bg:#f4f7fa}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI","Microsoft YaHei","PingFang SC",system-ui,sans-serif;line-height:1.7}
+.hero{background:linear-gradient(135deg,#122c49,#2f6db5);color:#fff;padding:28px 0 22px}
+.hero-inner{max-width:920px;margin:0 auto;padding:0 16px}
+.hero .kicker{font-size:13px;letter-spacing:2px;opacity:.85}
+.hero h1{margin:4px 0 2px;font-size:27px;font-weight:700}
+.hero .sub{font-size:14.5px;opacity:.92}
+.hero .meta{margin-top:14px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.28);border-radius:10px;padding:10px 14px;font-size:13.5px;line-height:1.9}
+.daynav{max-width:920px;margin:0 auto;padding:10px 16px;font-size:13.5px;color:var(--muted);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.daynav a{color:var(--blue);text-decoration:none}
+nav.tabs{position:sticky;top:0;z-index:10;background:rgba(244,247,250,.97);border-bottom:1px solid var(--line)}
+.tabs-inner{max-width:920px;margin:0 auto;padding:10px 16px;display:flex;gap:8px;flex-wrap:wrap}
+.tabs button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:5px 14px;font-size:13.5px;cursor:pointer;color:var(--ink);font-family:inherit}
+.tabs button.active{background:var(--blue);border-color:var(--blue);color:#fff}
+.tabs button .n{opacity:.75;font-size:12px;margin-left:5px}
+main{max-width:920px;margin:0 auto;padding:0 16px}
+section.domain{margin-top:26px}
+section.domain>h2{font-size:19px;margin:0;padding-left:10px;border-left:4px solid var(--accent,var(--blue));display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+section.domain>h2 .en{font-size:12px;color:var(--muted);font-weight:500}
+section.domain>.dsub{font-size:13px;color:var(--muted);margin:2px 0 10px;padding-left:14px}
+.item{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px 18px 13px;margin:12px 0;box-shadow:0 1px 2px rgba(20,54,92,.06)}
+.item .top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:6px}
+.badge{font-size:12px;padding:1px 9px;border-radius:999px;color:#fff;font-weight:600}
+.badge.paper{background:#2c6fbb}
+.badge.news{background:#e07b26}
+.chip{font-size:12px;color:#41566e;background:#eef3f8;border:1px solid #dfe8f1;border-radius:999px;padding:1px 9px}
+.item h3{margin:2px 0 6px;font-size:16px;line-height:1.5}
+.item h3 a{color:var(--dark);text-decoration:none}
+.item h3 a:hover{text-decoration:underline}
+.item h3 .zh{display:block;font-size:13.5px;color:var(--muted);font-weight:500;margin-top:2px}
+.item .sum{margin:4px 0 10px;font-size:14.5px;color:#2b3947}
+.item .sum b{color:#b4232e;font-weight:700}
+.item .meta{font-size:13px;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px;margin:0;word-break:break-all}
+.item .meta a{color:var(--blue);text-decoration:none}
+.item .meta a:hover{text-decoration:underline}
+footer{max-width:920px;margin:34px auto 0;padding:14px 16px 0;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px;text-align:center}
+@media(max-width:600px){.hero h1{font-size:22px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="kicker">FRONTIER BRIEFING</div>
+    <h1>多领域前沿资讯简报</h1>
+    <div class="sub">2026-11-22 星期六 · 第 1 期</div>
+    <div class="meta">
+      <b>数据覆盖窗口：</b>2026-11-15 至 2026-11-22（个别高价值条目放宽至最近 10 天，均已标注）<br>
+      <b>关注方向：</b>① 里德堡原子 ② 拓扑材料 ③ 射频前端 ④ 雷达<br>
+      <b>本期收录：</b>27 条（论文 18 · 新闻 9）· <b>生成时间：</b>2026-11-22（Asia/Shanghai）<br>
+      <b>使用提示：</b>点击下方标签即可按方向筛选；红色加粗为各条目的核心定量结果。
+    </div>
+  </div>
+</header>
+
+<div class="daynav">
+  <a href="index.html">← 简报索引</a>
+  <span>第 1 期 ｜ 上一期：— ｜ 下一期：待更新</span>
+</div>
+
+<nav class="tabs">
+  <div class="tabs-inner">
+    <button data-domain="all" class="active">全部<span class="n"></span></button>
+    <button data-domain="rydberg">里德堡原子<span class="n"></span></button>
+    <button data-domain="topo">拓扑材料<span class="n"></span></button>
+    <button data-domain="rf">射频前端<span class="n"></span></button>
+    <button data-domain="radar">雷达<span class="n"></span></button>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============ 里德堡原子 ============ -->
+<section class="domain" data-key="rydberg" style="--accent:#7c3aed">
+  <h2>里德堡原子 <span class="en">Rydberg Atoms</span></h2>
+  <p class="dsub">本周共 8 条：里德堡微波/太赫兹传感、里德堡阵列与量子门、里德堡激子光子集成、产业化动态</p>
+
+  <article class="item">
+    <div class="top"><span class="badge news">新闻</span><span class="chip">微波传感</span></div>
+    <h3><a href="https://phys.org/news/2026-11-atomic-interactions-microwave-sensor-capture.html">Intelligent quantum sensor with resistance to losses</a><span class="zh">抗损耗的智能量子微波传感器（华沙大学）</span></h3>
+    <p class="sum">波兰华沙大学用冷强相互作用里德堡原子构建无需校准的超灵敏微波探测器。研究表明，原子间相互作用虽自带损耗，却会把原子态变换成对后续探测损耗更鲁棒的形式，最终保留的 Fisher 信息比无相互作用的对应测量高 <b>3 倍</b>；里德堡原子的尺寸可比基态原子大约 <b>1000 倍</b>，因而对微波电场极为敏感。成果发表于 Nature Communications（<b>17, 9013</b>），新闻稿 2026-11-12 发布。</p>
+    <p class="meta">来源：<a href="https://www.eurekalert.org/news-releases/1151678">EurekAlert</a> / <a href="https://phys.org/news/2026-11-atomic-interactions-microwave-sensor-capture.html">Phys.org</a> · 2026-11-12（窗口外沿，放宽收录）</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge news">新闻</span><span class="chip">产业动态</span></div>
+    <h3><a href="https://atom-computing.com/news-resources">Atom Computing Finalizes $100 Million U.S. Department of Commerce R&amp;D Award</a><span class="zh">Atom Computing 敲定美国商务部 1 亿美元研发拨款，加速容错中性原子量子计算</span></h3>
+    <p class="sum">中性原子（光镊阵列 + 里德堡阻塞门）量子计算公司 Atom Computing 于 11 月 13 日正式敲定美国商务部 <b>1 亿美元</b>研发拨款，用于加速容错、实用规模量子计算研发；此前 5 月 21 日已签署意向书，并于 10 月 7 日入选 DARPA 量子基准测试计划（QBI）最终阶段。这是里德堡/中性原子路线迄今规模最大的政府资金落地之一。</p>
+    <p class="meta">来源：<a href="https://atom-computing.com/news-resources">Atom Computing 官网</a> · 2026-11-13（窗口外沿，放宽收录）</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">THz遥感辐射计</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.23193">Performance analysis of a Rydberg atom THz radiometer concept</a><span class="zh">里德堡原子太赫兹辐射计概念的性能分析</span></h3>
+    <p class="sum">面向对地观测太赫兹辐射测量（团队含 ESA 研究人员）的系统可行性分析：THz 频段位于电子学与光子学之间、接收机技术不成熟，而里德堡原子传感器对电场极为敏感、可<b>室温工作</b>、且<b>无需信号频率处的本振</b>。论文提出通过相干转换把热辐射相干搬移后探测的架构，并给出性能评估框架；相关成果已发表于 Proc. SPIE 14279（DOI 10.1117/12.3116900）。属概念与性能建模工作，尚未给出实测灵敏度。</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.23193">2611.23193</a> · Richard J. Murchie et al. · 2026-11-17</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">量子逻辑门</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.24078">CCZ gate beyond the strong Rydberg-blockade regime</a><span class="zh">超越强里德堡阻塞机制的 CCZ 三量子比特门</span></h3>
+    <p class="sum">在线性光镊阵列中 <b>3 个可单独寻址的原子</b>上提出 CCZ 门协议：利用两个相互作用移位符号相反的里德堡能级，配合解析确定的脉冲序列积累条件相位，并推导时间积分里德堡布居的解析表达式以计算衰减误差；经主方程模拟与蒙特卡洛（含热位置涨落）验证。与快速反阻塞（RAB）CCZ 协议相比，在<b>更大原子间距</b>下性能更优，缓解阻塞机制对间距的苛刻要求。摘要未给出具体保真度数值。</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.24078">2611.24078</a> · Snigdhadev Ray et al. · 2026-11-18</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">光子集成</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.25431">Interfacing Silicon Nitride Nanophotonics with Cuprous Oxide Rydberg Excitons</a><span class="zh">氮化硅纳米光子学与氧化亚铜里德堡激子的片上对接</span></h3>
+    <p class="sum">首次演示 <b>Cu₂O 里德堡激子</b>与 <b>SiNₓ 纳米光波导</b>的单片、CMOS 兼容对接：微晶激子辐射耦合进导模并由输出光栅收集，光谱同时呈现声子辅助 1s 正激子发射与黄系 <b>2p、3p</b> 里德堡谱线；收集信号的线偏振增强证实 TE 类导模为收集通道。Cu₂O 里德堡激子具有<b>微米级波函数</b>与强长程相互作用，该接口面向<b>少光子量级</b>的光学非线性器件。</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.25431">2611.25431</a> · Artem Kryvobok et al.（含 Boltasseva/Shalaev）· 2026-11-19</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">自旋霍尔光学</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.22672">Giant and sign-tunable spin Hall effect of light in a nonlocal nonlinear Rydberg medium</a><span class="zh">非局域非线性里德堡介质中巨大且符号可调的光子自旋霍尔效应</span></h3>
+    <p class="sum">在相干驱动的冷 <b>⁸⁷Rb 里德堡介质</b>中，利用非局域克尔非线性把光的自旋霍尔位移增强约 <b>1–2 个数量级</b>，并实现符号可调：空间位移与角位移的符号分别在主量子数 <b>n≈40</b> 和 <b>n≈60</b> 附近翻转；高里德堡态下空间位移可达<b>数十微米</b>，可直接观测。</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.22672">2611.22672</a> · Ying Sun et al. · 2026-11-17</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">里德堡阵列</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.21171">Observation of Crossover from Repulsive to Attractive Interactions between Two nS-Rydberg Atoms in Dual-Species Atom Arrays</a><span class="zh">双品体原子阵列中两个 nS 里德堡原子间排斥—吸引相互作用的交叉观测</span></h3>
+    <p class="sum">中国科学院团队在 <b>⁸⁷Rb–⁸⁵Rb 双品体</b>光镊阵列中围绕 <b>61S₁/₂</b> 里德堡能级做谱学测量，通过改变主量子数差 Δn 首次清晰观测到两里德堡原子间相互作用由排斥到吸引的交叉：<b>Δn=2</b> 时 Förster 增强的电子自旋交换主导，谱线强烈依赖双原子键取向、双激发概率呈各向异性；<b>Δn=1</b> 时轨道交换主导、近各向同性。为双品体里德堡阵列的相互作用调控提供了实验基准。</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.21171">2611.21171</a> · Yi Chen et al. · 中国科学院 · 2026-11-16</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">变分模拟</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.19790">Compact Projected Pfaffian States for Rydberg-Blockaded Quantum Spin Systems</a><span class="zh">里德堡阻塞量子自旋系统的紧致投影 Pfaffian 态</span></h3>
+    <p class="sum">证明带 Gutzwiller 投影与里德堡阻塞投影的 Pfaffian 拟设能以 <b>O(N)</b> 个参数近乎精确刻画非可积 PXP 模型基态：一维情形优化全部对称允许配对后，能量方差判据（V-score）达 <b>10⁻⁹</b> 量级；二维方格子上相对能量误差低于 <b>0.2%</b>。无阻挫变形 PXP 模型的精确投影乘积态位于变分流形内，可作为变分蒙特卡洛优质初态，代码开源。</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.19790">2611.19790</a> · Ryui Kaneko · 2026-11-15</p>
+  </article>
+</section>
+
+<!-- ============ 拓扑材料 ============ -->
+<section class="domain" data-key="topo" style="--accent:#0d9488">
+  <h2>拓扑材料 <span class="en">Topological Materials</span></h2>
+  <p class="dsub">本周共 7 条：分数陈绝缘体、磁性外尔体系、p 波磁性、拓扑超导与马约拉纳、高阶拓扑光子晶体</p>
+
+  <article class="item">
+    <div class="top"><span class="badge news">新闻</span><span class="chip">p波磁性</span></div>
+    <h3><a href="https://phys.org/news/2026-11-unusual-magnetism-revealed-simple-metal.html">Unusual magnetism revealed in a simple metal's electron spins</a><span class="zh">简单金属 EuSi 电子能带中发现 p 波磁性证据（发表于 Nature）</span></h3>
+    <p class="sum">11 月 19 日报道，《自然》论文在化学计量比金属 <b>EuSi（硅化铕）</b>中发现 p 波磁性证据：<b>约 33–62 K</b> 温区内铕磁矩形成螺旋磁序、净磁化为零，但能带出现<b>大于 100 meV</b> 的磁致劈裂，远超常规自旋轨道机制；动量空间中反向传播电子携带相反自旋极化（奇宇称自旋纹理），并观察到约 <b>10 μm</b> 的左/右手性磁畴。由 <b>19 个机构、38 位研究者</b>合作完成（马普所、上海科技大学、港科大、橡树岭国家实验室等），为自旋电子学与拓扑量子材料提供新的交换劈裂平台。</p>
+    <p class="meta">来源：<a href="https://phys.org/news/2026-11-unusual-magnetism-revealed-simple-metal.html">Phys.org</a> · 2026-11-19 ｜ 论文 DOI: 10.1038/s41586-026-11295-9（Nature）</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">拓扑量子计算</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.25858">Nonmagnetic Impurity Effects on Majorana Braiding Quantum Gates in Vortex Cores</a><span class="zh">涡旋芯马约拉纳编织量子门的非磁性杂质效应</span></h3>
+    <p class="sum">含时多体模拟首次系统量化非磁性杂质对涡旋芯马约拉纳编织门的影响：吸引型杂质压制拓扑能隙、破坏几何相位量子化，排斥型杂质则无同等破坏。对两零模的 <b>√Z 门</b>，以 <b>2a₀</b>（a₀ 为晶格常数）绕行杂质或放慢编织即可恢复近量子化；对四零模的 <b>X 门</b>，特定吸引杂质对配置下成功率可达 <b>约 0.9985</b>。为编织实验的缺陷容忍度给出了量化设计规则。</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.25858">2611.25858</a> · Jiangwei Long et al. · 2026-11-19</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">分数陈绝缘体</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.25010">Exact Fractional Chern Insulators from Hubbard Interactions</a><span class="zh">基于哈伯德相互作用的精确分数陈绝缘体</span></h3>
+    <p class="sum">将"Laughlin 波函数是阻挫自由母哈密顿量唯一零能基态"的精确对思想推广到分数陈绝缘体：在以 onsite Hubbard 相互作用为母哈密顿量的紧束缚模型中给出解析精确基态，关键构造为"朗道对偶陈带"（在布拉维格子上采样自旋-s 狄拉克朗道能级的多轨道能带）。该构造统一覆盖 <b>Laughlin、Read-Rezayi、Halperin</b> 三大分数化序列，并证明 FCI 基态可存在于"理想平带"之外的能带中，为 Moiré 与 kagome 之外的平台提供新的设计原则。</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.25010">2611.25010</a> · Jonah Herzog-Arbeitman et al. · 中科院物理所等 · 2026-11-18</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">拓扑超导</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.25018">First order vortex-unbinding transition in 2D topological superconductors</a><span class="zh">二维拓扑超导体中的一阶涡旋解束缚相变</span></h3>
+    <p class="sum">理论研究 2D 拓扑超导体中马约拉纳零模对 BKT 相变的根本性修正：当涡旋芯马约拉纳模的局域长度 <b>ξ_F 超过涡旋芯尺寸 ξ</b> 时，近邻涡旋经马约拉纳杂化产生额外短程吸引通道；构建有效场论并以重整化群和瞬子方法证明，这可使原本无限阶的 BKT 相变变为<b>真正的一阶相变</b>。文章提出 p+ip 超导岛约瑟夫森阵列作为人工平台，并预言一阶相变窗口导致的<b>磁滞回线</b>为可测实验信号。</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.25018">2611.25018</a> · Vera Mikheeva, Elio J. König · Rutgers 等 · 2026-11-18</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">二维磁性外尔</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.23688">Two-Dimensional Ferromagnetic Weyl Half-Semimetal</a><span class="zh">二维铁磁外尔半金属（单层 BaMn₄O₈ 预测）</span></h3>
+    <p class="sum">第一性原理 + 蒙特卡洛预测单层 <b>BaMn₄O₈</b> 为动力学、热学与力学均稳定的铁磁"外尔半金属"：自旋向上通道在费米能级附近出现线性外尔交叉、自旋向下通道绝缘（完全自旋极化），(100) 边界的费米弧边态在计入自旋轨道耦合后仍存活。基于磁各向异性的 <b>20×20×1</b> 格点有限尺寸标度给出居里温度约 <b>1446 K</b>，远高于室温，是本周少见的"高 Tc + 二维 + 外尔"三合一理论预测。</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.23688">2611.23688</a> · Yu-Yang Zhao et al. · 2026-11-18</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">拓扑光子学</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.22196">Microwave hinge states in an all-dielectric woodpile photonic crystal insulator</a><span class="zh">全介质木堆型光子晶体绝缘体中的微波铰链态</span></h3>
+    <p class="sum">在具有大完全带隙的<b>三维全介质木堆光子晶体</b>（毫米尺度晶格，便于微波直接测量）中实验观测到高阶拓扑铰链态：两种晶格经结构位移拼合，界面交线处出现透射峰与空间局域化；在边界极化拓扑等价的对照交线处则无铰链态，验证了"界面两侧局域边界极化不同才产生铰链态"的理论判据，把体-铰链对应落实到可拼装的三维光子平台。</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.22196">2611.22196</a> · S. Takahashi et al. · 2026-11-17</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">外尔半金属</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.20662">Intertwined Spin Chirality and Weyl Topology Driven Giant Hall Responses in Nd₄Sb₃</a><span class="zh">Nd₄Sb₃ 中自旋手性与外尔拓扑交织驱动的巨霍尔响应</span></h3>
+    <p class="sum">实验确定 Nd₄Sb₃ 为自旋极化磁性外尔半金属：<b>约 72 K</b> 铁磁有序（蒙特卡洛给出约 78 K）、<b>约 42 K</b> 进入非共面磁性态并伴随自旋重取向；磁重构使外尔点对数从共线态的 <b>42 对</b>大幅增至非共面态的 <b>115 对</b>。实测拓扑霍尔电阻率约 <b>3.9 μΩ·cm</b>、反常霍尔电导约 <b>1170 S/cm</b>，第一性原理计算的内在反常霍尔电导约 <b>983 S/cm</b>，与实验内在部分（约 990 S/cm）高度吻合。</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.20662">2611.20662</a> · Anu et al. · IIT Bombay 等 · 2026-11-16</p>
+  </article>
+</section>
+
+<!-- ============ 射频前端 ============ -->
+<section class="domain" data-key="rf" style="--accent:#ea580c">
+  <h2>射频前端 <span class="en">RF Front-End</span></h2>
+  <p class="dsub">本周共 5 条：GaN 功放新品、GaN HBT 工艺、功放数字预失真、宽带接收机、产业并购</p>
+
+  <article class="item">
+    <div class="top"><span class="badge news">新闻</span><span class="chip">功放</span></div>
+    <h3><a href="https://cmlmicro.com/news-media/news-archive/cml-micro-launches-its-first-defence-aligned-gan-power-amplifier-the-mgx-445040-s5">CML Micro Launches Its First Defence-Aligned GaN Power Amplifier, The MGX-445040-S5</a><span class="zh">CML Micro 发布首款国防向 GaN 功率放大器 MGX-445040-S5</span></h3>
+    <p class="sum">英国 CML Microcircuits 发布首款航空航天/国防向 GaN 功放 MMIC <b>MGX-445040-S5</b>：单级 C 频段 GaN-on-SiC 内匹配线性功放，工作频段 <b>4.4–5.0 GHz</b>，饱和输出功率 <b>40 dBm（10 W）</b>，小信号增益 <b>13.0 dB</b>，P3dB 处 PAE 达 <b>55%</b>，偏置 +28 V（56 mA 静态）；封装为 <b>5×5 mm</b> 热增强塑料空气腔 QFN（AQFN-32L），50Ω 标称匹配、内置隔直。面向 MANET 自组网电台、无人机数据链，并可作 5G NR n79 基站的高功率驱动级。</p>
+    <p class="meta">来源：<a href="https://cmlmicro.com/news-media/news-archive/cml-micro-launches-its-first-defence-aligned-gan-power-amplifier-the-mgx-445040-s5">CML Micro 官网</a> · 2026-11-18</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge news">新闻</span><span class="chip">毫米波雷达芯片</span></div>
+    <h3><a href="https://www.prnewswire.com/news-releases/novosense-plans-airtouch-acquisition-to-round-out-its-rf-portfolio-and-expand-in-adas-and-smart-terminals-302943492.html">NOVOSENSE Plans AirTouch Acquisition To Round Out Its RF Portfolio</a><span class="zh">纳芯微拟 4.87 亿元收购 AirTouch，补齐射频产品线并拓展 ADAS 与智能终端</span></h3>
+    <p class="sum">纳芯微公告拟以现金 <b>4.87 亿元人民币（约 6850 万美元）</b>收购宁波艾瑞思（AirTouch）<b>78.15%</b> 股权。AirTouch 专注智能射频传感器 IC 与毫米波雷达 SoC：<b>77 GHz</b> 车规雷达芯片已处于向 Tier 1 客户导入阶段，即将推出 <b>8T8R</b> 卫星雷达芯片，另有 5.8/10/24/60 GHz 雷达产品线。纳芯微 2026 年前三季度营收超 <b>42 亿元</b>、汽车占比超 <b>30%</b>，称合并后可提供车载卫星雷达完整模拟方案。</p>
+    <p class="meta">来源：<a href="https://www.prnewswire.com/news-releases/novosense-plans-airtouch-acquisition-to-round-out-its-rf-portfolio-and-expand-in-adas-and-smart-terminals-302943492.html">PR Newswire</a> · 2026-11-18</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">工艺平台</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.24790">Design and Modeling of Graded Base III-Nitride HBTs for High-Frequency Applications</a><span class="zh">面向高频应用的渐变基区 III 族氮化物 HBT 设计与建模</span></h3>
+    <p class="sum">针对高频 GaN HBT 提出 <b>N 极性渐变基区</b>设计：利用极化诱导空穴积累形成准电场辅助少子输运，缓解电流拥塞、Webster 效应与基区电阻限制。基于校准的二维 TCAD 仿真实现峰值 <b>fT/fMAX = 190/200 GHz</b>，按 V_BR·I_MAX/8 计算的功率密度高于 <b>20 W/mm</b>，为毫米波"高频 + 高功率"兼顾的 GaN 射频前端工艺平台提供设计路线。</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.24790">2611.24790</a> · Md Saklain Morshed et al. · Ohio State University · 2026-11-18</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">功放线性化</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.23101">StreamingDPD: A 1.28-GSa/s Instantaneous-Power-Gated Depthwise TCN Accelerator for Real-Time 320-MHz Digital Predistortion</a><span class="zh">面向实时 320 MHz 数字预失真的 1.28 GSa/s 功率门控深度 TCN 加速器</span></h3>
+    <p class="sum">面向 Wi-Fi 7/5G 大带宽功放实时数字预失真（DPD）的流式 TCN 加速器：仅 <b>207 参数、554 FLOPs/样本</b>，以 <b>1.28 GSa/s</b> 实时处理 <b>320 MHz</b> 信号。硬件在环实测 ACPR <b>−45.82 dBc</b>、EVM <b>−42.94 dB</b>（4096-QAM Wi-Fi 7），覆盖 40 MHz Wi-Fi 6 与 200 MHz 十载波 5G NR 场景。ASIC 采用 <b>12 nm FinFET</b>，核心面积 <b>0.10 mm²</b>、功耗 <b>142.21 mW</b>（111.10 pJ/样本）、时延 <b>40.63 ns</b>；较此前 22 nm 循环网络 DPD ASIC 吞吐提升 <b>5.1 倍</b>、每样本能耗降低约 <b>7 倍</b>。</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.23101">2611.23101</a> · Yizhuo Wu et al. · TU Delft · 2026-11-17</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">接收前端</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.22526">Edge-Combining Subharmonic Mixer-First Receiver</a><span class="zh">边缘组合式次谐波混频器优先接收机（1–10 GHz）</span></h3>
+    <p class="sum">提出一款 <b>1–10 GHz</b> 次谐波混频器优先（mixer-first）接收机：以半频 50% 占空比时钟驱动 N 路开关实现"边缘组合"，避免谐波混频的增益损失；基带放大采用反相器型差分结构并以背栅反馈线性化，增益由工艺电容比设定、不附加功耗。<b>22 nm FD-SOI</b> 原型实测转换增益 <b>12.8–18.1 dB</b>、噪声系数 <b>5.7–11 dB</b>、带外 IIP3 最高 <b>15.4 dBm</b>、功耗仅 <b>16.7–22.3 mW</b>，为宽带低功耗接收链路提供参考设计。</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.22526">2611.22526</a> · Eric Danson et al. · Virginia Tech · 2026-11-17</p>
+  </article>
+</section>
+
+<!-- ============ 雷达 ============ -->
+<section class="domain" data-key="radar" style="--accent:#2563eb">
+  <h2>雷达 <span class="en">Radar</span></h2>
+  <p class="dsub">本周共 7 条：反火力定位雷达、低空监视/反无人机雷达、星载 SAR、微多普勒识别、波形设计与开放数据集</p>
+
+  <article class="item">
+    <div class="top"><span class="badge news">新闻</span><span class="chip">反炮兵雷达</span></div>
+    <h3><a href="https://ukdefencejournal.org.uk/british-army-orders-new-counter-fire-radars-in-serpens-deal/">British Army orders new counter-fire radars in SERPENS deal</a><span class="zh">英陆军 SERPENS 计划 7400 万英镑订购 SRC Gryphon R1430 反火力定位雷达</span></h3>
+    <p class="sum">英国国防部向 SRC UK 授予 <b>7400 万英镑</b>合同（初期 6 年），为皇家炮兵第 5 团供应 Gryphon R1430 近程定位雷达，与声学探测系统集成，用于探测定位迫击炮、火炮等间射火力。R1430 为风冷 <b>X 波段三维 AESA</b>，以 <b>3 块阵面板</b>实现 <b>360°</b> 持续覆盖并支持行进间工作；固态设计无机械转动部件，较现役反火力雷达体积更小、功耗更低，提供车载与便携两种构型。</p>
+    <p class="meta">来源：<a href="https://ukdefencejournal.org.uk/british-army-orders-new-counter-fire-radars-in-serpens-deal/">UK Defence Journal</a> · 2026-11-20 ｜ 另见：<a href="https://www.srcinc.com/news-and-events/press/2026/20261028-serpens-src-uk-contract.html">SRC 官方新闻稿</a>（2026-10-28）</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge news">新闻</span><span class="chip">低空监视</span></div>
+    <h3><a href="https://www.unmannedairspace.info/counter-uas-systems-and-policies/midradar-announces-low-altitude-surveillance-radar-with-target-recognition/">Midradar MR-RDA15K low-altitude surveillance radar with target recognition</a><span class="zh">中国 Midradar 发布 MR-RDA15K 低空监视雷达（X 波段 AESA、AI 目标识别）</span></h3>
+    <p class="sum">中国厂商 Midradar 发布 MR-RDA15K 低空监视雷达：<b>X 波段二维有源相控阵</b>、<b>360°</b> 全向覆盖、高刷新率多目标跟踪，内置 AI 目标识别，可自动分类无人机、有人机、鸟类、车辆、船舶。厂商官网给出低空防御方案探测距离至 <b>15 km</b>（周界/边海防方案指标：人员 <b>800 m–16 km</b>、车辆最远 <b>42 km</b>）。该雷达与射频侦测、光电跟踪、干扰处置设备联动，组成一体化反无人机平台，面向机场、关键基础设施与边境海岸防护。</p>
+    <p class="meta">来源：<a href="https://www.unmannedairspace.info/counter-uas-systems-and-policies/midradar-announces-low-altitude-surveillance-radar-with-target-recognition/">Unmanned Airspace</a> · 2026-11-20</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge news">新闻</span><span class="chip">反无人机雷达</span></div>
+    <h3><a href="https://www.hensoldt.net/news/hensoldt-expands-production-capacity-partnership-with-zf">HENSOLDT expands production capacity: partnership with ZF</a><span class="zh">HENSOLDT 联合采埃孚 ZF 扩建 Spexer 反无人机雷达批量产能</span></h3>
+    <p class="sum">HENSOLDT 于 11 月 18 日宣布与 ZF Friedrichshafen 签署合作协议（德国联邦经济部见证）：由 ZF 建立 <b>Spexer 雷达系列可规模化批量生产</b>设施，并开发制造环节的自动化测试系统；雷达直接交付客户，HENSOLDT 保留全部知识产权。Spexer 家族面向地面、海上和低空目标的自动探测与分类，已用于 <b>Skyranger 30</b> 等近程防空系统；双方称欧洲反无人机需求急剧上升是合作动因。产能与金额未披露。</p>
+    <p class="meta">来源：<a href="https://www.hensoldt.net/news/hensoldt-expands-production-capacity-partnership-with-zf">HENSOLDT 官网</a> · 2026-11-18</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge news">新闻</span><span class="chip">星载SAR</span></div>
+    <h3><a href="https://rocketlabcorp.com/missions/launches/iqps-the-mountain-god-rises">Rocket Lab "The Mountain God Rises" — iQPS QPS-SAR</a><span class="zh">Electron 第 100 次发射，搭载 iQPS 雷达成像卫星入轨</span></h3>
+    <p class="sum">Rocket Lab 任务 "The Mountain God Rises" 在新西兰 Mahia 发射（官方 NET 2026-11-14），将 <b>1 颗 iQPS 的 QPS-SAR</b> 雷达成像卫星送入 <b>575 km 高、42° 倾角</b>的 LEO 轨道。这是 Electron <b>第 100 次发射</b>，也是 Rocket Lab 为 iQPS 执行的<b>第 11 次</b>专车任务；第三方报道称载荷为 QPS-SAR-19 "YAMATSUMI-II"（高分辨率 X 波段 SAR），此前 11 月 2 日曾将 QPS-SAR-20 送入同轨道。</p>
+    <p class="meta">来源：<a href="https://rocketlabcorp.com/missions/launches/iqps-the-mountain-god-rises">Rocket Lab 官网</a> · 2026-11-14（约，官方标注 NET）</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">微多普勒</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.25874">Parameter-Efficient Adaptation of Self-supervised Vision Backbones Survives Distribution Shift in Radar Micro-Doppler HAR</a><span class="zh">参数高效微调自监督视觉骨干：雷达微多普勒人体活动识别的分布偏移鲁棒性</span></h3>
+    <p class="sum">首次将自监督视觉基础模型 <b>DINOv3 + PiSSA</b> 参数高效适配（PEFT）用于雷达微多普勒人体活动识别，系统对比全量微调、冻结探针与 PEFT：全量微调出现跨数据集负迁移，冻结特征在跨朝向偏移下适配不足，仅 PEFT 同时规避两种失效。DINOv3-PiSSA Small 以 <b>4.5 倍更少总参数、仅 3% 可训练参数</b>达到此前 Base 级 SOTA 的同分布精度；跨偏移迁移增益随偏移严重度递增，分别为 <b>+2.1、+6.6、+8.9 个百分点</b>。</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.25874">2611.25874</a> · Keryan Chelouche et al. · CY Cergy Paris / ENSEA / CNRS · 2026-11-19</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">波形设计</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.20179">Radar Waveform Design via Convex Semidefinite Relaxation</a><span class="zh">基于凸半定松弛的雷达波形设计（wavex 算法）</span></h3>
+    <p class="sum">将"由给定模糊函数幅值设计雷达波形"的相位恢复问题提升为脉冲频带上正半定矩阵的<b>凸半定规划</b>，提出 wavex 算法（松弛反射初始化 + 半定代理迭代 + 局部精修）。理论上证明：带限脉冲最多只需其时域样本数 <b>3 倍</b>的模糊函数采样即可在 4 类平凡模糊之内<b>唯一确定</b>，并给出对偶证书作为精确全局恢复的充分条件；区别于依赖初始点的非凸窄带方法，wavex 保证收敛到全局最优，噪声增大时性能平缓退化，代码开源。</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.20179">2611.20179</a> · Samuel Pinilla · 2026-11-15</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">侦察数据集</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.16786">RadarML: A Multi-Channel Over-the-Air Dataset of Common Radar Waveforms for ES Evaluation</a><span class="zh">面向电子支援评估的多通道雷达常用波形实测数据集（约 200 万条脉冲）</span></h3>
+    <p class="sum">基于 UCL ARESTOR（RFSoC 软件定义无线电）平台公开发布约 <b>200 万条</b>外场实测（over-the-air）雷达脉冲数据：信号变体覆盖不同中心频率、带宽、脉宽与调制样式，每个接收通道对每种变体采集 <b>1000 个样本</b>，多通道同步记录；数据集以 <b>CC BY-SA 4.0</b> 开放获取，旨在为雷达调制识别与电子支援（ES）算法提供真实数据基准，弥合合成数据与实测差距。（11-12 发布，属本期放宽窗口）</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.16786">2611.16786</a> · Ryan White et al. · UCL · 2026-11-12</p>
+  </article>
+</section>
+
+</main>
+
+<footer>
+  多领域前沿资讯简报 · 第 1 期（2026-11-22）｜ 数据来源：arXiv API 与公开新闻检索，条目均附原文链接 ｜ 由 ZCode 在对话中按需生成，非定时推送<br>
+  <a href="index.html">返回索引</a>
+</footer>
+
+<script>
+(function(){
+  var secs = Array.prototype.slice.call(document.querySelectorAll('section.domain'));
+  var counts = {all: 0};
+  secs.forEach(function(s){
+    var n = s.querySelectorAll('.item').length;
+    counts[s.dataset.key] = n;
+    counts.all += n;
+  });
+  var btns = Array.prototype.slice.call(document.querySelectorAll('.tabs button'));
+  btns.forEach(function(b){
+    b.querySelector('.n').textContent = ' ' + counts[b.dataset.domain];
+    b.addEventListener('click', function(){
+      btns.forEach(function(x){ x.classList.toggle('active', x === b); });
+      secs.forEach(function(s){
+        s.style.display = (b.dataset.domain === 'all' || s.dataset.key === b.dataset.domain) ? '' : 'none';
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
