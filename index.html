@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>多领域前沿资讯简报 · 索引</title>
+<style>
+:root{--blue:#2563eb;--dark:#14365c;--ink:#1f2933;--muted:#5b6b7b;--line:#e3e9f0;--bg:#f4f7fa}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI","Microsoft YaHei","PingFang SC",system-ui,sans-serif;line-height:1.7}
+.hero{background:linear-gradient(135deg,#122c49,#2f6db5);color:#fff;padding:34px 0 26px}
+.hero-inner{max-width:920px;margin:0 auto;padding:0 16px}
+.hero .kicker{font-size:13px;letter-spacing:2px;opacity:.85}
+.hero h1{margin:4px 0 6px;font-size:28px;font-weight:700}
+.hero .sub{font-size:14.5px;opacity:.92}
+main{max-width:920px;margin:0 auto;padding:0 16px 56px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:18px 0;box-shadow:0 1px 2px rgba(20,54,92,.06)}
+.panel h2{margin:0 0 10px;font-size:17px;color:var(--dark)}
+.panel p{margin:6px 0;font-size:14px}
+.dirs{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:8px}
+.dir{border:1px solid var(--line);border-left-width:4px;border-radius:10px;padding:10px 12px;background:#fbfdff}
+.dir b{font-size:14.5px}
+.dir span{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}
+.issue{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:10px 0;background:#fbfdff}
+.issue .no{font-weight:700;color:var(--dark);font-size:15.5px}
+.issue .date{font-size:13px;color:var(--muted)}
+.issue .stat{font-size:13px;color:var(--muted)}
+.issue a.read{white-space:nowrap;background:var(--blue);color:#fff;text-decoration:none;font-size:13.5px;border-radius:999px;padding:5px 16px}
+.issue a.read:hover{opacity:.9}
+.note{font-size:13px;color:var(--muted)}
+footer{max-width:920px;margin:0 auto;padding:0 16px 40px;color:var(--muted);font-size:12.5px;text-align:center}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="kicker">FRONTIER BRIEFING · INDEX</div>
+    <h1>多领域前沿资讯简报</h1>
+    <div class="sub">每日一期 · 论文 + 新闻混合 · 定量总结 · 页内按方向筛选</div>
+  </div>
+</header>
+
+<main>
+  <div class="panel">
+    <h2>收录方向</h2>
+    <div class="dirs">
+      <div class="dir" style="border-left-color:#7c3aed"><b>里德堡原子</b><span>Rydberg Atoms：里德堡传感/接收、阵列与量子门、里德堡激子</span></div>
+      <div class="dir" style="border-left-color:#0d9488"><b>拓扑材料</b><span>Topological Materials：拓扑超导、外尔/陈体系、马约拉纳、高阶拓扑</span></div>
+      <div class="dir" style="border-left-color:#ea580c"><b>射频前端</b><span>RF Front-End：功放/低噪放/滤波器、T/R 组件、RFIC、GaN 等工艺</span></div>
+      <div class="dir" style="border-left-color:#2563eb"><b>雷达</b><span>Radar：整机与系统动态、AESA、SAR、信号处理与数据集</span></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>各期列表</h2>
+    <div class="issue">
+      <div>
+        <div class="no">第 1 期 · 2026-11-22 星期六</div>
+        <div class="date">覆盖窗口：2026-11-15 至 2026-11-22（创刊号，个别条目放宽至最近 10 天并已标注）</div>
+        <div class="stat">收录 27 条（论文 18 · 新闻 9）：里德堡 8 · 拓扑 7 · 射频前端 5 · 雷达 7</div>
+      </div>
+      <a class="read" href="2026-11-22.html">阅读本期</a>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>使用说明</h2>
+    <p class="note">· 每期一个独立 HTML 页面（按日期命名），打开后在页面顶部点击标签即可按方向筛选；条目中的红色加粗为该条的核心定量结果。</p>
+    <p class="note">· 本简报不定时自动生成：需要更新时，直接在与 ZCode 的对话中说"生成今天的简报"即可，新页面会追加到本索引。</p>
+    <p class="note">· 所有条目均来自当日检索的公开来源（arXiv、期刊、厂商与行业媒体），并附原文链接，日期与数字以原文为准。</p>
+  </div>
+</main>
+
+<footer>由 ZCode 在对话中按需生成与维护</footer>
+</body>
+</html>
