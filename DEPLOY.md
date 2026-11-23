@@ -3,7 +3,8 @@
 ## 线上信息（已上线 ✅ 2026-11-22）
 - **站点地址（手机收藏这个）**：https://ShanyangDiye.github.io/frontier-briefing/
 - **仓库**：https://github.com/ShanyangDiye/frontier-briefing （public，Pages 为 legacy 分支构建）
-- 已部署：第 1 期（2026-11-22，覆盖 11-15 至 11-22，27 条）；已验证直连 200、首页含各期入口
+- 已部署：第 1 期（2026-11-22，27 条）、第 2 期（2026-11-23，10 条）；已验证直连 200、首页含各期入口
+- 周末窗口规律：周六窗口内 arXiv 无公告、行业媒体基本无发布，属天然空窗；第 2 期采用"窗口闭合后首个公告批次（北京时间 09:00）并入并逐条标注"的口径，后续周末期沿用
 
 ## 本地目录
 - 站点源文件：`D:\ZP\ZCode_data\leisure\frontier-briefing\`
