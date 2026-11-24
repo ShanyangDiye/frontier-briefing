@@ -32,6 +32,7 @@ section.domain>.dsub{font-size:13px;color:var(--muted);margin:2px 0 10px;padding
 .badge{font-size:12px;padding:1px 9px;border-radius:999px;color:#fff;font-weight:600}
 .badge.paper{background:#2c6fbb}
 .badge.news{background:#e07b26}
+.badge.journal{background:#7c3aed}
 .chip{font-size:12px;color:#41566e;background:#eef3f8;border:1px solid #dfe8f1;border-radius:999px;padding:1px 9px}
 .item h3{margin:2px 0 6px;font-size:16px;line-height:1.5}
 .item h3 a{color:var(--dark);text-decoration:none}
@@ -53,11 +54,12 @@ footer{max-width:920px;margin:34px auto 0;padding:14px 16px 0;border-top:1px sol
   <div class="hero-inner">
     <div class="kicker">FRONTIER BRIEFING</div>
     <h1>多领域前沿资讯简报</h1>
-    <div class="sub">2026-11-24 星期一 · 第 3 期</div>
+    <div class="sub">2026-11-24 星期一 · 第 3 期（重更新版）</div>
     <div class="meta">
-      <b>数据覆盖窗口：</b>北京时间 2026-11-23 08:00 至 2026-11-24 08:00<br>
-      <b>本期口径说明：</b><span class="warn">本期为"新闻过渡期"，论文 0 篇</span>——窗口内的 arXiv 公告（11-23 09:00 批次，ID 2611.26686–27996）已整体并入第 2 期并逐条标注，不重复收录；下一批次于 11-24 09:00 上线，恰好落入第 4 期窗口，本期不并入以避免重复。<b>自第 4 期起恢复"每期一批"正常节奏。</b>另：11-23 当天射频厂商动态仅有 EverythingRF 单源线索（Qorvo QPA3298 8–11 GHz 12 W GaN 功放等），厂商官网与第二来源均无法核实，按"宁缺毋滥"未收录。<br>
-      <b>关注方向：</b>① 里德堡原子 ② 拓扑材料 ③ 射频前端 ④ 雷达 ｜ <b>本期收录：</b>3 条（新闻 3）｜ <b>生成时间：</b>2026-11-24 上午（Asia/Shanghai）
+      <b>数据覆盖窗口：</b>北京时间 2026-11-23 09:00 至 11-24 09:00<br>
+      <b>窗口与来源约定（本期起生效）：</b>每期窗口为每日 <b>09:00 → 次日 09:00</b>，与 arXiv 公告时刻对齐——自第 4 期起每期包含起点当日 09:00 公告批次；来源不再限于 arXiv，<b>期刊正式发表</b>（Nature/Science/PRL/IEEE 等，看摘要或新闻报道即可）+ 科学媒体（EurekAlert/phys.org 等）+ 行业与厂商动态。<br>
+      <b>本期特例说明：</b><span class="warn">窗口起点（11-23 09:00）公告的 arXiv 批次已随第 2 期先行发布（<a href="2026-11-23.html" style="color:#ffd9a8">见第 2 期</a>），为避免重复本期不再收录；11-24 09:00 上线的新批次归第 4 期。</span>因此本期为纯新闻期：期刊与媒体经全量扫描后收录 5 条。<br>
+      <b>关注方向：</b>① 里德堡原子 ② 拓扑材料 ③ 射频前端 ④ 雷达 ｜ <b>本期收录：</b>5 条（新闻 5）｜ <b>生成时间：</b>2026-11-24（Asia/Shanghai）
     </div>
   </div>
 </header>
@@ -82,24 +84,30 @@ footer{max-width:920px;margin:34px auto 0;padding:14px 16px 0;border-top:1px sol
 <!-- ============ 里德堡原子 ============ -->
 <section class="domain" data-key="rydberg" style="--accent:#7c3aed">
   <h2>里德堡原子 <span class="en">Rydberg Atoms</span></h2>
-  <p class="dsub">本期窗口内无条目</p>
-  <div class="empty">11-23 当天无相关新闻（候选条目核实后均不在窗口内，如 Quantum Zeitgeist 里德堡处理器报道实为 11-02 发布）；arXiv 内容见第 2 期并入说明。</div>
+  <p class="dsub">本期 1 条新闻：中性原子量子计算产业扩张；期刊 11-23/24 无里德堡方向新上线论文</p>
+
+  <article class="item">
+    <div class="top"><span class="badge news">新闻</span><span class="chip">产业动态</span></div>
+    <h3><a href="https://thequantuminsider.com/2026/11/23/planqc-expands-into-the-uk-with-new-cambridge-site/">planqc Expands Into the UK With New Cambridge Site</a><span class="zh">planqc 进军英国：中性原子量子计算公司在剑桥设立新基地</span></h3>
+    <p class="sum">德国中性原子量子计算公司 planqc（MPQ/慕尼黑大学 2022 年 spin-off，光镊阵列 + 光晶格路线，与里德堡中性原子平台同源）宣布设立 planqc UK Ltd 并在剑桥建成完整中性原子实验室，用于量子系统组装、集成与调试。公司累计融资 <b>5500 万欧元</b>、已宣布的融资与项目总额超 <b>1 亿欧元</b>（含 <b>2900 万欧元</b> DiNAQC 合同与 <b>1910 万欧元</b> MAQCS 联合体项目）；剑桥团队计划两年内扩至约 <b>20 人</b>（公司全员 130+），与卡文迪许实验室 Ulrich Schneider 组合作开发下一代光晶格技术，由 CTO Sebastian Blatt 领衔，目标是"可扩展到<b>百万量子比特</b>"的 QPU。该扩张获 ARM 联合创始人 Hermann Hauser 背书，系继因斯布鲁克后第二个海外基地。</p>
+    <p class="meta">来源：<a href="https://thequantuminsider.com/2026/11/23/planqc-expands-into-the-uk-with-new-cambridge-site/">The Quantum Insider</a> · 2026-11-23（窗口内）</p>
+  </article>
 </section>
 
 <!-- ============ 拓扑材料 ============ -->
 <section class="domain" data-key="topo" style="--accent:#0d9488">
   <h2>拓扑材料 <span class="en">Topological Materials</span></h2>
-  <p class="dsub">本期 2 条新闻：外尔-近藤半金属的非平衡霍尔响应、交变磁体手性声子</p>
+  <p class="dsub">本期 2 条新闻（均 PRL 正式发表，经科学媒体报道）；期刊目录未再发现其他拓扑新上线论文</p>
 
   <article class="item">
-    <div class="top"><span class="badge news">新闻</span><span class="chip">拓扑半金属</span></div>
+    <div class="top"><span class="badge journal">期刊</span><span class="chip">拓扑半金属</span></div>
     <h3><a href="https://phys.org/news/2026-11-magnets-extreme-voltage-kind-hall.html">No magnets needed: Extreme voltage drives completely new kind of Hall effect</a><span class="zh">无需磁体：极端电压驱动一种全新的霍尔效应（外尔-近藤半金属，PRL）</span></h3>
     <p class="sum">莱斯大学 Qimiao Si 团队（第一作者 Shouvik Sur，合作维也纳工业大学）在 Physical Review Letters 发表理论工作：强关联外尔-近藤（Weyl-Kondo）拓扑半金属中的"完全非平衡（FNE）霍尔响应"——<b>无需磁场或内禀磁序</b>，仅靠强电场即可驱动横向霍尔电流。弱场区横向电流与电压呈<b>平方标度（∝V²）</b>、保持时间反演对称；超过材料依赖的临界电压后，电子从电场获得额外动量，响应转为<b>线性（∝V¹）</b>，表观上等效于时间反演对称破缺，撤去电压可逆恢复。该非微扰区响应不再由贝里曲率偶极矩控制，且结论可推广到高阶多极贝里曲率——对 2017 年提出的 Weyl-Kondo 半金属概念是一次非平衡物态层面的验证。</p>
     <p class="meta">来源：<a href="https://phys.org/news/2026-11-magnets-extreme-voltage-kind-hall.html">Phys.org（Rice 通稿）</a> · 2026-11-23（窗口内）｜ 论文 DOI: 10.1103/cj8b-4sp4（PRL）· 预印本 <a href="https://arxiv.org/abs/2411.16675">arXiv:2411.16675</a></p>
   </article>
 
   <article class="item">
-    <div class="top"><span class="badge news">新闻</span><span class="chip">交变磁体声子</span></div>
+    <div class="top"><span class="badge journal">期刊</span><span class="chip">交变磁体声子</span></div>
     <h3><a href="https://phys.org/news/2026-11-theoretical-atomic-oscillation-cloverleaf-symmetry.html">Theoretical model describes a new type of atomic oscillation with cloverleaf symmetry in altermagnets</a><span class="zh">理论模型预言交变磁体中具有"四叶草"对称性的新型原子振荡（PRL）</span></h3>
     <p class="sum">德国马丁路德大学哈勒（MLU）联合明斯特大学在 PRL 发表纯理论预测（DOI: 10.1103/r43h-ch8r）：交变磁体（altermagnets，2019 年发现的磁序新类别）中存在"d 波"手性声子——原子绕平衡位置的旋转振荡在动量空间形成<b>四叶（d 波）对称织构</b>，并给出严格的手性选择定则：<b>右旋自旋波仅与右旋声子耦合、左旋仅与左旋耦合</b>。由此提出"声子角动量分离器"概念：<b>仅改变温度</b>即可分选不同手性的声子，并可用外加磁场调控，长远目标是免电流的声子信息传输以降低能耗。属拓扑磁体近邻方向（动量空间织构与磁振子-声子杂化）。</p>
     <p class="meta">来源：<a href="https://phys.org/news/2026-11-theoretical-atomic-oscillation-cloverleaf-symmetry.html">Phys.org（MLU 通稿）</a> · 2026-11-23（窗口内）｜ 论文 DOI: 10.1103/r43h-ch8r（PRL）</p>
@@ -109,14 +117,14 @@ footer{max-width:920px;margin:34px auto 0;padding:14px 16px 0;border-top:1px sol
 <!-- ============ 射频前端 ============ -->
 <section class="domain" data-key="rf" style="--accent:#ea580c">
   <h2>射频前端 <span class="en">RF Front-End</span></h2>
-  <p class="dsub">本期窗口内无条目</p>
-  <div class="empty">论文批次未上线（见页首口径说明）；11-23 当天厂商动态仅有 EverythingRF 单源线索（Qorvo QPA3298 8–11 GHz 12 W GaN 功放、APITech 6–18 GHz 40 W SSPA 等），厂商官网与第二来源均无法核实，按"宁缺毋滥"未收录，待核实后随下期回补。</div>
+  <p class="dsub">本期窗口内无可坐实条目</p>
+  <div class="empty">EverythingRF 候选（Qorvo QPA3298 8–11 GHz 12 W GaN 功放、APITech 6–18 GHz 40 W SSPA、Plexus 40 GHz GaAs 数字步进衰减器等）经二次核实仍无法坐实：厂商官网访问被限流（429/403）、精确搜索无独立结果、Mouser/Digi-Key 无可见上架记录；Plexus 相关衰减器产品线疑似已并入 Spectrum Control。IEEE 期刊 TOC 因搜索服务限流未能完成核查。已顺延至第 4 期重查（分销商上架即为最佳第二来源）。</div>
 </section>
 
 <!-- ============ 雷达 ============ -->
 <section class="domain" data-key="radar" style="--accent:#2563eb">
   <h2>雷达 <span class="en">Radar</span></h2>
-  <p class="dsub">本期 1 条新闻：荷兰军用空管雷达体系升级（窗口内唯一可溯源动态）</p>
+  <p class="dsub">本期 2 条新闻：荷兰军用空管雷达体系升级、DroneShield 反无人机系统达成 IOC</p>
 
   <article class="item">
     <div class="top"><span class="badge news">新闻</span><span class="chip">军用空管雷达</span></div>
@@ -124,12 +132,19 @@ footer{max-width:920px;margin:34px auto 0;padding:14px 16px 0;border-top:1px sol
     <p class="sum">荷兰国防物资与 IT 司令部（COMMIT）11-23 授予泰雷兹交钥匙合同（金额未披露），更新荷兰军用空管雷达体系，涵盖供货、安装、调试与多年期维护。主设备为 <b>STAR NG 型 S 波段一次监视雷达</b>，可探测高速/低速目标及无人机等极小目标，具备抗电子干扰、风电场杂波抑制与测高能力；配套 <b>RSM NG 型 L 波段二次监视雷达</b>，作用距离达 <b>256 海里（约 474 km）</b>，兼容 Modes 1/2/3/A/C 与 Mode S 敌我识别并支持 ADS-B。系统替换老化装备、复用军民两用机场基础设施，满足 EUROCONTROL/EASA/ICAO 标准；荷兰成为继法国、英国、罗马尼亚之后<b>第四个</b>采用该系列的北约国家。</p>
     <p class="meta">来源：<a href="https://www.edrmagazine.eu/royal-netherlands-air-space-force-selects-thales-to-modernise-military-air-traffic-control-radar-systems">EDR Magazine</a> · 2026-11-23（窗口内）｜ 参数互证：Airforce Technology</p>
   </article>
+
+  <article class="item">
+    <div class="top"><span class="badge news">新闻</span><span class="chip">反无人机雷达</span></div>
+    <h3><a href="https://drasticnews.com/droneshield-reports-initial-operational-capability-for-counter-uas-system-supporting-jiatf-401/">DroneShield reports initial operational capability for counter-UAS system supporting JIATF-401</a><span class="zh">DroneShield 反无人机系统（雷达采用 Echodyne EchoShield）为美 JIATF-401 达成初步作战能力</span></h3>
+    <p class="sum">DroneShield 宣布其面向美国国防部联合跨机构特遣队 <b>JIATF-401</b> 的分层固定阵地反无人机（C-UAS）方案达成<b>初始作战能力（IOC）</b>：以 DroneShield 射频侦测设备与 Echodyne <b>EchoShield</b> 雷达组合实现"射频 + 雷达"双重探测与态势感知。EchoShield 为 <b>K 波段（约 24 GHz）</b>固态电扫描阵列（ESA）精密跟踪雷达，按厂商公开指标可对 Group 1 微小型无人机实现约 <b>1.5 km</b>、对更大目标约 <b>3 km</b> 的探测与跟踪。系统套数、合同金额与部署地点未披露。原文日期线 11-24 未含时刻，按窗口内沿收录。</p>
+    <p class="meta">来源：<a href="https://drasticnews.com/droneshield-reports-initial-operational-capability-for-counter-uas-system-supporting-jiatf-401/">Drastic News</a> · 2026-11-24（窗口内沿）</p>
+  </article>
 </section>
 
 </main>
 
 <footer>
-  多领域前沿资讯简报 · 第 3 期（2026-11-24）｜ 数据来源：arXiv API 与公开新闻检索，条目均附原文链接 ｜ 由 ZCode 在对话中按需生成<br>
+  多领域前沿资讯简报 · 第 3 期（2026-11-24）｜ 数据来源：期刊发表信息、科学媒体与行业新闻检索，条目均附原文链接 ｜ 由 ZCode 在对话中按需生成<br>
   <a href="index.html">返回索引</a> ｜ <a href="2026-11-23.html">上一期（第 2 期）</a>
 </footer>
 
