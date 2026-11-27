@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>前沿简报 · 第6期 · 2026-11-27</title>
+<style>
+:root{--blue:#2563eb;--dark:#14365c;--ink:#1f2933;--muted:#5b6b7b;--line:#e3e9f0;--bg:#f4f7fa}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI","Microsoft YaHei","PingFang SC",system-ui,sans-serif;line-height:1.7}
+.hero{background:linear-gradient(135deg,#122c49,#2f6db5);color:#fff;padding:28px 0 22px}
+.hero-inner{max-width:920px;margin:0 auto;padding:0 16px}
+.hero .kicker{font-size:13px;letter-spacing:2px;opacity:.85}
+.hero h1{margin:4px 0 2px;font-size:27px;font-weight:700}
+.hero .sub{font-size:14.5px;opacity:.92}
+.hero .meta{margin-top:14px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.28);border-radius:10px;padding:10px 14px;font-size:13.5px;line-height:1.9}
+.hero .meta .warn{color:#ffd9a8}
+.daynav{max-width:920px;margin:0 auto;padding:10px 16px;font-size:13.5px;color:var(--muted);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.daynav a{color:var(--blue);text-decoration:none}
+nav.tabs{position:sticky;top:0;z-index:10;background:rgba(244,247,250,.97);border-bottom:1px solid var(--line)}
+.tabs-inner{max-width:920px;margin:0 auto;padding:10px 16px;display:flex;gap:8px;flex-wrap:wrap}
+.tabs button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:5px 14px;font-size:13.5px;cursor:pointer;color:var(--ink);font-family:inherit}
+.tabs button.active{background:var(--blue);border-color:var(--blue);color:#fff}
+.tabs button .n{opacity:.75;font-size:12px;margin-left:5px}
+main{max-width:920px;margin:0 auto;padding:0 16px}
+section.domain{margin-top:26px}
+section.domain>h2{font-size:19px;margin:0;padding-left:10px;border-left:4px solid var(--accent,var(--blue));display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+section.domain>h2 .en{font-size:12px;color:var(--muted);font-weight:500}
+section.domain>.dsub{font-size:13px;color:var(--muted);margin:2px 0 10px;padding-left:14px}
+.item{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px 18px 13px;margin:12px 0;box-shadow:0 1px 2px rgba(20,54,92,.06)}
+.item .top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:6px}
+.badge{font-size:12px;padding:1px 9px;border-radius:999px;color:#fff;font-weight:600}
+.badge.paper{background:#2c6fbb}
+.badge.news{background:#e07b26}
+.badge.journal{background:#7c3aed}
+.chip{font-size:12px;color:#41566e;background:#eef3f8;border:1px solid #dfe8f1;border-radius:999px;padding:1px 9px}
+.item h3{margin:2px 0 6px;font-size:16px;line-height:1.5}
+.item h3 a{color:var(--dark);text-decoration:none}
+.item h3 a:hover{text-decoration:underline}
+.item h3 .zh{display:block;font-size:13.5px;color:var(--muted);font-weight:500;margin-top:2px}
+.item .sum{margin:4px 0 10px;font-size:14.5px;color:#2b3947}
+.item .sum b{color:#b4232e;font-weight:700}
+.item .meta{font-size:13px;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px;margin:0;word-break:break-all}
+.item .meta a{color:var(--blue);text-decoration:none}
+.item .meta a:hover{text-decoration:underline}
+.empty{border:1px dashed var(--line);border-radius:12px;padding:12px 16px;margin:12px 0;font-size:13.5px;color:var(--muted);background:#fbfdff}
+footer{max-width:920px;margin:34px auto 0;padding:14px 16px 0;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px;text-align:center}
+@media(max-width:600px){.hero h1{font-size:22px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="kicker">FRONTIER BRIEFING</div>
+    <h1>多领域前沿资讯简报</h1>
+    <div class="sub">2026-11-27 星期四 · 第 6 期</div>
+    <div class="meta">
+      <b>数据覆盖窗口：</b>北京时间 2026-11-26 09:00 至 11-27 09:00<br>
+      <b>本期说明：</b>标准节奏——收录窗口起点 <b>11-26 09:00 公告的 arXiv 批次</b>（UTC 11-25 提交，ID 2611.34xxx 段）。<span class="warn">本期为纯论文期（新闻 0 条）：当日新闻检索全线遭遇限流（429），无法核实任何新闻条目，按"宁缺毋滥"收 0，待服务恢复后于下期回补。</span>另：射频候选 QPA3298 经四期核查确认 Qorvo 官方产品线查无此型号（EverythingRF 源数据存疑），已终止跟踪并从顺延清单移除。<br>
+      <b>关注方向：</b>① 里德堡原子 ② 拓扑材料 ③ 射频前端 ④ 雷达 ｜ <b>本期收录：</b>10 条（论文 10）｜ <b>生成时间：</b>2026-11-27（Asia/Shanghai）
+    </div>
+  </div>
+</header>
+
+<div class="daynav">
+  <a href="index.html">← 简报索引</a>
+  <span>第 6 期 ｜ 上一期：<a href="2026-11-26.html">2026-11-26（第 5 期）</a> ｜ 下一期：待更新</span>
+</div>
+
+<nav class="tabs">
+  <div class="tabs-inner">
+    <button data-domain="all" class="active">全部<span class="n"></span></button>
+    <button data-domain="rydberg">里德堡原子<span class="n"></span></button>
+    <button data-domain="topo">拓扑材料<span class="n"></span></button>
+    <button data-domain="rf">射频前端<span class="n"></span></button>
+    <button data-domain="radar">雷达<span class="n"></span></button>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============ 里德堡原子 ============ -->
+<section class="domain" data-key="rydberg" style="--accent:#7c3aed">
+  <h2>里德堡原子 <span class="en">Rydberg Atoms</span></h2>
+  <p class="dsub">本期 3 篇论文：优化编码晶格、热蒸气 EIT Förster 共振、数据增强量子蒙特卡罗</p>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">量子优化编码</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.34792">Monotone Crossing Lattices for Exact Binary Optimization Encodings on Rydberg Arrays</a><span class="zh">用于里德堡阵列精确二元优化编码的单调交叉晶格</span></h3>
+    <p class="sum">针对可编程里德堡阵列求解最大权重独立集（MWIS）时非局域相互作用需辅助原子、限制实例规模的问题，提出四态单位圆盘"交叉单元"：沿远离对角方向的已占据路径使拷贝比特<b>单调不减</b>，保证编码实例的每个基态都可解码出原问题最优解，并推广到带成对布尔约束的二元二次目标与最小集合覆盖；完整布局在约束删格前仅需 <b>2n²−n 个格点</b>，主导阶格点数较固定完整网格参考方案<b>减半</b>。在来自同一候选池的 <b>18 组配对基准</b>上，布局使格点数削减 <b>12.1%–54.0%</b>。</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.34792">2611.34792</a> · Liyin Hu et al. · v1 2026-11-25 · 公告 11-26 09:00 批次</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">里德堡EIT</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.34729">Observation of a Förster Resonance in a Heated Rydberg Atom Ensemble</a><span class="zh">加热里德堡原子系综中 Förster 共振的观测（EIT 电场传感器）</span></h3>
+    <p class="sum">面向基于里德堡 EIT 的紧凑电场传感器，研究热蒸气里德堡介质在高原子数密度下 EIT 响应非线性化、谱线畸变的问题：理论与实验结合建立的模型可准确再现观测到的 EIT 谱线轮廓；谱线移动分析表明<b>电离效应解释了绝大部分非线性来源</b>，同时在强耦合能级、靠近 <b>Förster 共振</b>（里德堡态间偶极-偶极相互作用共振增强）条件下，仍清晰观测到里德堡相互作用效应（6 页正文 + 5 页补充、8 图）。对实际电场传感器的建模校准有直接工程意义。</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.34729">2611.34729</a> · Richard G. Wolfendale et al. · 杜伦大学（英国）等 · v1 2026-11-25 · 公告 11-26 09:00 批次</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">量子模拟算法</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.34636">Data-enhanced self-learning projective quantum Monte Carlo with Rydberg-atom measurements</a><span class="zh">利用里德堡原子测量数据增强的自学习投影量子蒙特卡罗</span></h3>
+    <p class="sum">提出把可编程量子模拟器（二维里德堡原子阵列）的投影测量数据引入投影量子蒙特卡罗（PQMC）引导波函数的"数据增强自学习"方法，采用受限玻尔兹曼机（RBM）与循环神经网络（RNN）两种神经波函数：实验数据预训练可减小有限粒子数效应、加速自学习收敛，以<b>更少行走子与更少迭代次数</b>得到无偏基态估计，增益在 RBM 上最强、更精确的 RNN 上较小但可见；无预训练的有限尺寸标度给出无序-棋盘序相变的<b>临界点与临界指数</b>，与已有数值结果一致（16 页 12 图）。</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.34636">2611.34636</a> · Vichayuth Imchitr et al. · v1 2026-11-25 · 公告 11-26 09:00 批次</p>
+  </article>
+</section>
+
+<!-- ============ 拓扑材料 ============ -->
+<section class="domain" data-key="topo" style="--accent:#0d9488">
+  <h2>拓扑材料 <span class="en">Topological Materials</span></h2>
+  <p class="dsub">本期 4 篇论文：摩尔双层 Chern 金属、转角石墨烯 f 波 TIVC、有限程单带 FCI、TI/SC 双层界面</p>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">Chern金属</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.34780">Emergent Chern metal in strongly correlated moiré bilayers</a><span class="zh">强关联摩尔双层中的涌现 Chern 金属</span></h3>
+    <p class="sum">研究强关联摩尔转角 TMD 双层（如 MoTe₂/WSe₂）中自旋-电荷分离态与层极化螺旋自旋织构的耦合，通过无自旋 holon 的低能有效哈密顿量求解输运与拓扑性质：能带的显著不对称翘曲在大部分参数区间<b>闭合全局间接带隙</b>，使真正的拓扑绝缘体仅存在于精细调谐的临界轨迹上；由于有限的局域直接带隙得以保留，广阔参数区涌现出 Chern 数 <b>C=±1 的拓扑 Chern 金属</b>——产生可观反常霍尔响应的同时保持有限纵向电导，为摩尔系统中耗散性反常霍尔态提供纯电子学的强关联实现途径。</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.34780">2611.34780</a> · Kaushal Kumar Kesharpu et al. · v1 2026-11-25 · 公告 11-26 09:00 批次</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">转角石墨烯</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.34225">Hidden f-wave TIVC and Quantum Phase Transitions in Metallic States of Twisted Bilayer Graphene</a><span class="zh">转角双层石墨烯金属态中的隐藏 f 波 TIVC 序与量子相变</span></h3>
+    <p class="sum">研究魔角双层石墨烯在填充 ν=−2 至 ν=−3、栅极距离调节库仑相互作用下的基态相图：发现 ν≈−2 附近的 Kramers 谷间相干（KIVC）相中隐藏着 <b>f 波时间反演对称谷间相干（TIVC）序</b>，其强度在金属区内随偏离 ν=−2 而增强，与近期超净样品中报道的 TIVC 实验信号相呼应；随载流子密度降低，IVC 相经准二级相变转为谷极化相，进一步降低密度时经子晶格极化逐渐发展进入<b>量子反常霍尔相</b>，相变伴随费米面轮廓的大幅重构（15 页 7 图）。</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.34225">2611.34225</a> · Arindam Pramanik et al. · Tata 基础研究所（印度）· v1 2026-11-25 · 公告 11-26 09:00 批次</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">分数陈绝缘体</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.34255">Fractional Chern Insulator in a Finite-Range One-Band Model</a><span class="zh">有限程单带模型中的分数陈绝缘体</span></h3>
+    <p class="sum">提出仅含<b>有限程（finite-range）相互作用</b>的极简单带模型，可在 1/3 填充处稳定实现分数陈绝缘体：精确对角化与 DMRG 两种独立数值方法一致给出<b>三重简并基态流形</b>，霍尔电导为 <b>−2e²/3h</b>；模型还重现了分数电荷泵浦效应——为 FCI 研究提供无需复杂摩尔能带工程的极简理论平台。</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.34255">2611.34255</a> · Tong Liu et al. · v1 2026-11-25 · 公告 11-26 09:00 批次</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">拓扑异质结</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.33869">Structural Anisotropy in Bi₂Se₃/λ-(BETS)₂GaCl₄ Topological Insulator/Superconductor Bilayer</a><span class="zh">Bi₂Se₃/λ-(BETS)₂GaCl₄ 拓扑绝缘体/超导体双层中的结构各向异性</span></h3>
+    <p class="sum">实验研究三维拓扑绝缘体 Bi₂Se₃ 薄膜沉积在有机超导体 λ-(BETS)₂GaCl₄ 表面形成的 TI/SC 双层异质结构：发现沉积 <b>4 分钟</b>后 ab 面内出现最大的结构与电子结构修饰，对应约 <b>110 nm</b> Bi₂Se₃ 厚度的中间过渡区间；系统刻画了拓扑绝缘体-有机超导体界面的结构各向异性，为构建近邻效应拓扑超导器件平台提供界面结构基础。</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.33869">2611.33869</a> · Fathan M. Santana et al. · v1 2026-11-25 · 公告 11-26 09:00 批次</p>
+  </article>
+</section>
+
+<!-- ============ 射频前端 ============ -->
+<section class="domain" data-key="rf" style="--accent:#ea580c">
+  <h2>射频前端 <span class="en">RF Front-End</span></h2>
+  <p class="dsub">本期 1 篇论文：THz 可调谐滤波器（上期候选核实收录）；QPA3298 经四期核查确认查无此型号，终止跟踪</p>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">THz滤波器</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.34593">Tunable Terahertz Bandpass Filter based on the Photonic Emulation of a 2DEG Interferometer through the Geometric Phase of Light</a><span class="zh">基于光几何相位 2DEG 干涉仪光子仿真的可调谐太赫兹带通滤波器</span></h3>
+    <p class="sum">面向下一代无线通信 THz 信道选择需求，实验演示 <b>0.3 THz</b> 附近连续可调谐的带通滤波器：用 Pancharatnam–Berry 几何相位在光路上"仿真"二维电子气（2DEG）干涉仪（数学上类比电子 Aharonov–Bohm 干涉仪），并采用定制亚波长波片与腔镜实现腔内偏振控制。定量指标：精细度 <b>F≈17</b>、品质因数 <b>Q≈1.5×10³</b>、谐振线宽（FWHM）约 <b>200 MHz</b>；相比传统 Fabry–Pérot 腔滤波器受镜间距等物理约束的方案，该几何相位架构实现连续调谐（9 页 8 图）。上期候选经核实成立，正式收录。</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.34593">2611.34593</a> · Victor I. Iwanaga et al. · 产业技术综合研究所 AIST / 大阪大学等（日本）· v1 2026-11-25 · 公告 11-26 09:00 批次</p>
+  </article>
+</section>
+
+<!-- ============ 雷达 ============ -->
+<section class="domain" data-key="radar" style="--accent:#2563eb">
+  <h2>雷达 <span class="en">Radar</span></h2>
+  <p class="dsub">本期 2 篇论文：雷达感知流水线 AI 智能体、轨道车辆雷达测速异常检测；行业新闻 0 条（搜索限流）</p>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">AI流水线</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.34754">AutoRSP: An AI Agent for Radar Sensing Pipeline Design</a><span class="zh">AutoRSP：雷达感知流水线自动设计的 AI 智能体</span></h3>
+    <p class="sum">提出 AutoRSP，把雷达感知系统的软硬件全栈自动设计交给 AI Agent：通过映射到<b>五个栈层</b>的子智能体结构嵌入雷达系统级知识，以代码形式表示每一层并显式建模跨层依赖；搜索反馈不依赖 LLM 评判，而来自<b>射频仿真—片上仿真—真实边缘设备执行</b>构成的实测闭环，并给出加速智能体循环的优化方法以补偿真实反馈慢于 LLM 调用的时延。在机器人成像、汽车感知、生命体征监测三类场景验证：产出的可执行流水线性能<b>与人类专家设计相当或更优</b>，且胜过闭源智能体方案；工具链、基准与评测框架将开源发布。</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.34754">2611.34754</a> · Zhi Zheng et al. · 多机构合作 · v1 2026-11-25 · 公告 11-26 09:00 批次</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">异常检测</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.34639">Doppler RaDAR Single-Frame Anomaly Detection and Consistency Assessment by Velocity-Conditioned Gaussian Spectral Modeling</a><span class="zh">基于速度条件化高斯谱建模的多普勒雷达单帧异常检测与一致性评估</span></h3>
+    <p class="sum">面向轨道车辆雷达测速"数值准不准"之外的"物理上可信不可信"问题，提出速度条件化高斯谱建模框架：神经编码器从复多普勒谱估计车速，高斯解码器在该速度条件下建模预期谱分布；推理期导出谱异常分数 SAS、条件异常分数 CAS 与绝对速度分歧 <b>AVD</b> 三个在线指标，<b>无需真值速度</b>即可评估测量合理性。受控注入谱异常的实验中，SAS 与 CAS 在多数条件下优于常规谱指标；对额外峰与局部两类异常，AVD 与真实测速误差的皮尔逊相关系数 <b>r&gt;0.99</b>——可用于轨道交通雷达测速传感器的在线自诊断与数据可信度把关。</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.34639">2611.34639</a> · Malte Stelzer et al. · 布伦瑞克工业大学与西门子 · v1 2026-11-25 · 公告 11-26 09:00 批次</p>
+  </article>
+</section>
+
+</main>
+
+<footer>
+  多领域前沿资讯简报 · 第 6 期（2026-11-27）｜ 数据来源：arXiv、期刊发表信息与公开新闻检索，条目均附原文链接 ｜ 由 ZCode 在对话中按需生成<br>
+  <a href="index.html">返回索引</a> ｜ <a href="2026-11-26.html">上一期（第 5 期）</a>
+</footer>
+
+<script>
+(function(){
+  var secs = Array.prototype.slice.call(document.querySelectorAll('section.domain'));
+  var counts = {all: 0};
+  secs.forEach(function(s){
+    var n = s.querySelectorAll('.item').length;
+    counts[s.dataset.key] = n;
+    counts.all += n;
+  });
+  var btns = Array.prototype.slice.call(document.querySelectorAll('.tabs button'));
+  btns.forEach(function(b){
+    b.querySelector('.n').textContent = ' ' + counts[b.dataset.domain];
+    b.addEventListener('click', function(){
+      btns.forEach(function(x){ x.classList.toggle('active', x === b); });
+      secs.forEach(function(s){
+        s.style.display = (b.dataset.domain === 'all' || s.dataset.key === b.dataset.domain) ? '' : 'none';
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
