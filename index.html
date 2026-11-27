@@ -21,12 +21,23 @@ main{max-width:920px;margin:0 auto;padding:0 16px 56px}
 .dir{border:1px solid var(--line);border-left-width:4px;border-radius:10px;padding:10px 12px;background:#fbfdff}
 .dir b{font-size:14.5px}
 .dir span{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}
-.issue{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:10px 0;background:#fbfdff}
-.issue .no{font-weight:700;color:var(--dark);font-size:15.5px}
-.issue .date{font-size:13px;color:var(--muted)}
-.issue .stat{font-size:13px;color:var(--muted)}
-.issue a.read{white-space:nowrap;background:var(--blue);color:#fff;text-decoration:none;font-size:13.5px;border-radius:999px;padding:5px 16px}
-.issue a.read:hover{opacity:.9}
+.cal-sum{font-size:13px;color:var(--muted);margin:2px 0 10px}
+.cal-wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
+.cal-card{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:#fbfdff}
+.cal-title{font-weight:600;margin-bottom:6px;color:var(--dark);font-size:14.5px}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.cal-wk{text-align:center;font-size:11px;color:var(--muted)}
+.cal-cell{min-height:46px;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:8px;font-size:13px;position:relative;padding:2px 0;text-decoration:none;color:inherit}
+.cal-cell.blank{visibility:hidden}
+.cal-cell.future{color:#b6c2cd;background:#f3f6f9}
+.cal-cell.past{color:#c2ccd4;background:#fafbfc}
+a.cal-cell.has{background:#e2f2e5;color:#137333;font-weight:600;cursor:pointer;border:1px solid #bfdfc4}
+a.cal-cell.has:hover{border-color:#137333;text-decoration:none}
+.cal-cell.today{background:#fff4c2;color:#8a6d00;font-weight:700;border:1px solid #ecc94b}
+a.cal-cell.today.has{background:#e2f2e5;color:#137333;border:2px solid #ecc94b}
+.cal-no{font-size:10px;line-height:1.2;margin-top:1px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--muted);margin-top:10px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:4px;margin-right:5px;vertical-align:-1px}
 .note{font-size:13px;color:var(--muted)}
 footer{max-width:920px;margin:0 auto;padding:0 16px 40px;color:var(--muted);font-size:12.5px;text-align:center}
 </style>
@@ -37,7 +48,7 @@ footer{max-width:920px;margin:0 auto;padding:0 16px 40px;color:var(--muted);font
   <div class="hero-inner">
     <div class="kicker">FRONTIER BRIEFING · INDEX</div>
     <h1>多领域前沿资讯简报</h1>
-    <div class="sub">每日一期 · 论文 + 新闻混合 · 定量总结 · 页内按方向筛选</div>
+    <div class="sub">每日一期 · 论文 + 期刊 + 新闻混合 · 定量总结 · 页内按方向筛选</div>
   </div>
 </header>
 
@@ -53,65 +64,73 @@ footer{max-width:920px;margin:0 auto;padding:0 16px 40px;color:var(--muted);font
   </div>
 
   <div class="panel">
-    <h2>各期列表</h2>
-    <div class="issue">
-      <div>
-        <div class="no">第 6 期 · 2026-11-27 星期四</div>
-        <div class="date">覆盖窗口：11-26 09:00 至 11-27 09:00（标准节奏：含 11-26 09:00 公告批次；新闻因搜索限流 0 条）</div>
-        <div class="stat">收录 10 条（论文 10）：里德堡 3 · 拓扑 4 · 射频前端 1 · 雷达 2</div>
-      </div>
-      <a class="read" href="2026-11-27.html">阅读本期</a>
-    </div>
-    <div class="issue">
-      <div>
-        <div class="no">第 5 期 · 2026-11-26 星期三</div>
-        <div class="date">覆盖窗口：11-25 09:00 至 11-26 09:00（标准节奏：含 11-25 09:00 公告批次；首次收录期刊条目）</div>
-        <div class="stat">收录 10 条（论文 8 · 期刊 1 · 新闻 1）：里德堡 4 · 拓扑 2 · 射频前端 1 · 雷达 3</div>
-      </div>
-      <a class="read" href="2026-11-26.html">阅读本期</a>
-    </div>
-    <div class="issue">
-      <div>
-        <div class="no">第 4 期 · 2026-11-25 星期二</div>
-        <div class="date">覆盖窗口：11-24 09:00 至 11-25 09:00（标准节奏：含 11-24 09:00 公告批次 + 期刊/新闻）</div>
-        <div class="stat">收录 11 条（论文 10 · 新闻 1）：里德堡 4 · 拓扑 4 · 射频前端 0 · 雷达 3</div>
-      </div>
-      <a class="read" href="2026-11-25.html">阅读本期</a>
-    </div>
-    <div class="issue">
-      <div>
-        <div class="no">第 3 期 · 2026-11-24 星期一</div>
-        <div class="date">覆盖窗口：11-23 09:00 至 11-24 09:00（窗口已对齐 arXiv 公告时刻，起点批次随第 2 期发布；来源扩展至期刊/行业）</div>
-        <div class="stat">收录 5 条（新闻 5）：里德堡 1 · 拓扑 2 · 射频前端 0 · 雷达 2</div>
-      </div>
-      <a class="read" href="2026-11-24.html">阅读本期</a>
-    </div>
-    <div class="issue">
-      <div>
-        <div class="no">第 2 期 · 2026-11-23 星期日</div>
-        <div class="date">覆盖窗口：11-22 08:00 至 11-23 08:00（周末空窗，11-23 09:00 公告批次已并入并逐条标注）</div>
-        <div class="stat">收录 10 条（论文 9 · 新闻 1）：里德堡 2 · 拓扑 4 · 射频前端 3 · 雷达 1</div>
-      </div>
-      <a class="read" href="2026-11-23.html">阅读本期</a>
-    </div>
-    <div class="issue">
-      <div>
-        <div class="no">第 1 期 · 2026-11-22 星期六</div>
-        <div class="date">覆盖窗口：2026-11-15 至 2026-11-22（创刊号，个别条目放宽至最近 10 天并已标注）</div>
-        <div class="stat">收录 27 条（论文 18 · 新闻 9）：里德堡 8 · 拓扑 7 · 射频前端 5 · 雷达 7</div>
-      </div>
-      <a class="read" href="2026-11-22.html">阅读本期</a>
+    <h2>更新日历</h2>
+    <div class="cal-sum" id="cal-sum"></div>
+    <div class="cal-wrap" id="calendars"></div>
+    <div class="legend">
+      <span><i style="background:#ecc94b"></i>今天</span>
+      <span><i style="background:#137333"></i>已发布（点击进入）</span>
+      <span><i style="background:#c2ccd4"></i>未来 / 未发布</span>
     </div>
   </div>
 
   <div class="panel">
     <h2>使用说明</h2>
-    <p class="note">· 每期一个独立 HTML 页面（按日期命名），打开后在页面顶部点击标签即可按方向筛选；条目中的红色加粗为该条的核心定量结果。</p>
-    <p class="note">· 本简报不定时自动生成：需要更新时，直接在与 ZCode 的对话中说"生成今天的简报"即可，新页面会追加到本索引。</p>
-    <p class="note">· 所有条目均来自当日检索的公开来源（arXiv、期刊、厂商与行业媒体），并附原文链接，日期与数字以原文为准。</p>
+    <p class="note">· 在日历上点击绿色日期即可进入该期简报；当日若已生成会变绿（同时保留黄色边框标记"今天"）。每期页面顶部可按四方向筛选，条目中的红色加粗为该条的核心定量结果。</p>
+    <p class="note">· 本简报不定时自动生成：需要更新时，直接在与 ZCode 的对话中说"生成今天的简报"即可（流程已固化为 frontier-briefing 技能，来源矩阵覆盖 arXiv、期刊、仓储、媒体与产业三层）。</p>
+    <p class="note">· 所有条目均来自当日检索的公开来源，并附原文链接，日期与数字以原文为准。</p>
   </div>
 </main>
 
 <footer>由 ZCode 在对话中按需生成与维护</footer>
+
+<script>
+const ISSUES = [
+  {d:"2026-11-27", no:6, n:10, stat:"论文 10"},
+  {d:"2026-11-26", no:5, n:10, stat:"论文 8 · 期刊 1 · 新闻 1"},
+  {d:"2026-11-25", no:4, n:11, stat:"论文 10 · 新闻 1"},
+  {d:"2026-11-24", no:3, n:5,  stat:"新闻 5"},
+  {d:"2026-11-23", no:2, n:10, stat:"论文 9 · 新闻 1"},
+  {d:"2026-11-22", no:1, n:27, stat:"论文 18 · 新闻 9"}
+];
+(function(){
+  const map = {};
+  ISSUES.forEach(x => { map[x.d] = x; });
+  const pad = v => String(v).padStart(2, "0");
+  const iso = d => d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate());
+  const today = new Date(); today.setHours(0,0,0,0);
+  const t = iso(today);
+  // 月份范围：最早一期所在月 → 当前月
+  let minT = today.getTime();
+  ISSUES.forEach(x => { const tt = new Date(x.d + "T00:00:00").getTime(); if (tt < minT) minT = tt; });
+  let cur = new Date(minT); cur = new Date(cur.getFullYear(), cur.getMonth(), 1);
+  const endY = today.getFullYear(), endM = today.getMonth();
+  const wk = ["一","二","三","四","五","六","日"];
+  let html = "";
+  while (cur.getFullYear() < endY || (cur.getFullYear() === endY && cur.getMonth() <= endM)) {
+    const y = cur.getFullYear(), m = cur.getMonth();
+    const dow = (new Date(y, m, 1).getDay() + 6) % 7; // 周一=0
+    const days = new Date(y, m + 1, 0).getDate();
+    let cells = wk.map(w => `<span class="cal-wk">${w}</span>`).join("");
+    for (let i = 0; i < dow; i++) cells += `<span class="cal-cell blank"></span>`;
+    for (let d = 1; d <= days; d++) {
+      const dt = new Date(y, m, d), key = iso(dt), x = map[key];
+      if (x) {
+        const cls = "cal-cell has" + (key === t ? " today" : "");
+        cells += `<a class="${cls}" href="${x.d}.html" title="第 ${x.no} 期 · ${x.stat}"><span class="cal-d">${d}</span><span class="cal-no">第${x.no}期</span></a>`;
+      } else {
+        const cls = "cal-cell " + (dt > today ? "future" : "past");
+        cells += `<span class="${cls}"><span class="cal-d">${d}</span></span>`;
+      }
+    }
+    html += `<div class="cal-card"><div class="cal-title">${y} 年 ${m + 1} 月</div><div class="cal-grid">${cells}</div></div>`;
+    cur.setMonth(cur.getMonth() + 1);
+  }
+  document.getElementById("calendars").innerHTML = html;
+  const total = ISSUES.reduce((s, x) => s + x.n, 0);
+  document.getElementById("cal-sum").textContent =
+    `已发布 ${ISSUES.length} 期 · 累计 ${total} 条 · 最新一期 ${ISSUES[0].d}（第 ${ISSUES[0].no} 期）`;
+})();
+</script>
 </body>
 </html>
