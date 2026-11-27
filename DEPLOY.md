@@ -1,5 +1,10 @@
 # 简报站点部署与维护说明
 
+## 技能化（2026-11-27 起）
+- 本流程已固化为可调用技能：`C:\Users\mjc_2\.agents\skills\frontier-briefing\SKILL.md`
+- 内容含：窗口/命名约定、四领域细分方向、**A/B/C 三层来源矩阵**（对标豆包+AMiner 覆盖范围：arXiv + 期刊 TOC 直扫（含无预印本期刊）+ Zenodo 等学术仓储 + 科学媒体 + 国际防务媒体 + 厂商新闻稿 + 政府/军方合同演习层 + 财经通讯社 + 国内来源 + 会议/基金）、质量与去重纪律、页面模板与部署验证步骤。
+- 对标依据（用户提供的豆包/AMiner 截图）：豆包=厂商官方稿+政府公告+军媒+合同演习，窗口 09:00→09:00；AMiner=关键词订阅覆盖 arXiv + 期刊（如 Optical and Quantum Electronics）+ Zenodo（CERN）仓储。
+
 ## 线上信息（已上线 ✅ 2026-11-22）
 - **站点地址（手机收藏这个）**：https://ShanyangDiye.github.io/frontier-briefing/
 - **仓库**：https://github.com/ShanyangDiye/frontier-briefing （public，Pages 为 legacy 分支构建）
