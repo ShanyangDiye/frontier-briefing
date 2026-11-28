@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>前沿简报 · 第7期 · 2026-11-28</title>
+<style>
+:root{--blue:#2563eb;--dark:#14365c;--ink:#1f2933;--muted:#5b6b7b;--line:#e3e9f0;--bg:#f4f7fa}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI","Microsoft YaHei","PingFang SC",system-ui,sans-serif;line-height:1.7}
+.hero{background:linear-gradient(135deg,#122c49,#2f6db5);color:#fff;padding:28px 0 22px}
+.hero-inner{max-width:920px;margin:0 auto;padding:0 16px}
+.hero .kicker{font-size:13px;letter-spacing:2px;opacity:.85}
+.hero h1{margin:4px 0 2px;font-size:27px;font-weight:700}
+.hero .sub{font-size:14.5px;opacity:.92}
+.hero .meta{margin-top:14px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.28);border-radius:10px;padding:10px 14px;font-size:13.5px;line-height:1.9}
+.hero .meta .warn{color:#ffd9a8}
+.daynav{max-width:920px;margin:0 auto;padding:10px 16px;font-size:13.5px;color:var(--muted);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.daynav a{color:var(--blue);text-decoration:none}
+nav.tabs{position:sticky;top:0;z-index:10;background:rgba(244,247,250,.97);border-bottom:1px solid var(--line)}
+.tabs-inner{max-width:920px;margin:0 auto;padding:10px 16px;display:flex;gap:8px;flex-wrap:wrap}
+.tabs button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:5px 14px;font-size:13.5px;cursor:pointer;color:var(--ink);font-family:inherit}
+.tabs button.active{background:var(--blue);border-color:var(--blue);color:#fff}
+.tabs button .n{opacity:.75;font-size:12px;margin-left:5px}
+main{max-width:920px;margin:0 auto;padding:0 16px}
+section.domain{margin-top:26px}
+section.domain>h2{font-size:19px;margin:0;padding-left:10px;border-left:4px solid var(--accent,var(--blue));display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+section.domain>h2 .en{font-size:12px;color:var(--muted);font-weight:500}
+section.domain>.dsub{font-size:13px;color:var(--muted);margin:2px 0 10px;padding-left:14px}
+.item{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px 18px 13px;margin:12px 0;box-shadow:0 1px 2px rgba(20,54,92,.06)}
+.item .top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:6px}
+.badge{font-size:12px;padding:1px 9px;border-radius:999px;color:#fff;font-weight:600}
+.badge.paper{background:#2c6fbb}
+.badge.news{background:#e07b26}
+.badge.journal{background:#7c3aed}
+.chip{font-size:12px;color:#41566e;background:#eef3f8;border:1px solid #dfe8f1;border-radius:999px;padding:1px 9px}
+.item h3{margin:2px 0 6px;font-size:16px;line-height:1.5}
+.item h3 a{color:var(--dark);text-decoration:none}
+.item h3 a:hover{text-decoration:underline}
+.item h3 .zh{display:block;font-size:13.5px;color:var(--muted);font-weight:500;margin-top:2px}
+.item .sum{margin:4px 0 10px;font-size:14.5px;color:#2b3947}
+.item .sum b{color:#b4232e;font-weight:700}
+.item .meta{font-size:13px;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px;margin:0;word-break:break-all}
+.item .meta a{color:var(--blue);text-decoration:none}
+.item .meta a:hover{text-decoration:underline}
+.empty{border:1px dashed var(--line);border-radius:12px;padding:12px 16px;margin:12px 0;font-size:13.5px;color:var(--muted);background:#fbfdff}
+footer{max-width:920px;margin:34px auto 0;padding:14px 16px 0;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px;text-align:center}
+@media(max-width:600px){.hero h1{font-size:22px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="kicker">FRONTIER BRIEFING</div>
+    <h1>多领域前沿资讯简报</h1>
+    <div class="sub">2026-11-28 星期六 · 第 7 期</div>
+    <div class="meta">
+      <b>数据覆盖窗口：</b>北京时间 2026-11-27 09:00 至 11-28 09:00<br>
+      <b>本期说明：</b><span class="warn">感恩节周（美国 11-26 感恩节），arXiv 投稿与防务发稿双淡</span>，本期共 5 条。两条雷达新闻为美东 11-26 晚间发布（北京 11-27 早间，窗口内沿，已标注）；拓扑 1 篇为检索漏收回补（属第 6 期公告批次，v1 11-25，现补收并标注）。射频前端空栏：感恩节批次无硬件类论文，新闻渠道限流。<br>
+      <b>关注方向：</b>① 里德堡原子 ② 拓扑材料 ③ 射频前端 ④ 雷达 ｜ <b>本期收录：</b>5 条（期刊 1 · 论文 1 · 新闻 3）｜ <b>生成时间：</b>2026-11-28 上午（Asia/Shanghai）
+    </div>
+  </div>
+</header>
+
+<div class="daynav">
+  <a href="index.html">← 简报索引</a>
+  <span>第 7 期 ｜ 上一期：<a href="2026-11-27.html">2026-11-27（第 6 期）</a> ｜ 下一期：待更新</span>
+</div>
+
+<nav class="tabs">
+  <div class="tabs-inner">
+    <button data-domain="all" class="active">全部<span class="n"></span></button>
+    <button data-domain="rydberg">里德堡原子<span class="n"></span></button>
+    <button data-domain="topo">拓扑材料<span class="n"></span></button>
+    <button data-domain="rf">射频前端<span class="n"></span></button>
+    <button data-domain="radar">雷达<span class="n"></span></button>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============ 里德堡原子 ============ -->
+<section class="domain" data-key="rydberg" style="--accent:#7c3aed">
+  <h2>里德堡原子 <span class="en">Rydberg Atoms</span></h2>
+  <p class="dsub">本期 2 条：期刊直扫层首次收获（无预印本的 OQE 期刊论文）+ 圆里德堡长时自旋交换新闻；arXiv 本批次无强相关论文</p>
+
+  <article class="item">
+    <div class="top"><span class="badge journal">期刊</span><span class="chip">里德堡EIT图案</span></div>
+    <h3><a href="https://doi.org/10.1007/s11082-026-09279-0">Vortex Modulation of Ferris Wheel Pattern Via Double Electromagnetically Induced Transparency in Rydberg Atoms</a><span class="zh">基于双电磁感应透明的里德堡原子"摩天轮"图案涡旋调控（Optical and Quantum Electronics，无预印本）</span></h3>
+    <p class="sum">安徽大学（光电信息获取与防护技术全国重点实验室）在 ¹³³Cs 四能级梯型里德堡系统中，用两束拉盖尔–高斯（LG）涡旋光叠加驱动上能级里德堡跃迁，研究双 EIT 下的探针吸收：吸收谱呈 <b>1 个中心增强峰 + 2 个 Autler–Townes 边峰</b>（双暗态量子干涉）；"摩天轮"亮瓣数目按 <b>N = |l₁−l₂|</b> 由两束光拓扑荷之差决定。零探针失谐时形成高对比轴对称图案；拓扑荷<b>奇偶性决定形貌</b>——奇数拓扑荷给出清晰螺旋带状图案、偶数则模糊。与三能级单暗态方案不同，该图案由方位角调制的双暗态干涉产生，可用于高维空间量子光学。</p>
+    <p class="meta">Optical and Quantum Electronics 59, 35 · DOI: <a href="https://doi.org/10.1007/s11082-026-09279-0">10.1007/s11082-026-09279-0</a> · Yin Lu et al. · 安徽大学 · 2026-11-26/27 上线（期刊发表，无预印本；窗口内沿）</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge news">新闻</span><span class="chip">圆里德堡</span></div>
+    <h3><a href="https://quantumzeitgeist.com/rydberg-atom-arrays-extended-interaction-time-microseconds">Researchers Extend Atom Interaction Time to 60 Microseconds</a><span class="zh">法国 ENS 将圆里德堡原子自旋交换相互作用时间延长至 60 微秒级</span></h3>
+    <p class="sum">Quantum Zeitgeist 11-27 报道，巴黎高师（ENS/PSL，Raimond/Brune/Sayrin 团队）将圆里德堡原子间自旋交换相互作用时间延长至超过 <b>67 μs</b>——较此前数微秒水平提升<b>约一个数量级</b>，实验观测到 <b>40 个自旋振荡周期</b>。方案仅用 <b>2 个</b>相互作用圆里德堡原子，辅以"辅助原子"作测量中介实现量子比特态的无扰动读出，并以类降噪耳机的定时脉冲动力学解耦抑制自旋–运动耦合、阻止振荡坍缩。基于预印本 arXiv:2609.37766，对中性原子阵列量子模拟/计算的相干时间扩展有参考意义。</p>
+    <p class="meta">来源：<a href="https://quantumzeitgeist.com/rydberg-atom-arrays-extended-interaction-time-microseconds">Quantum Zeitgeist</a> · 2026-11-27（窗口内）｜ 底层论文：arXiv:2609.37766</p>
+  </article>
+</section>
+
+<!-- ============ 拓扑材料 ============ -->
+<section class="domain" data-key="topo" style="--accent:#0d9488">
+  <h2>拓扑材料 <span class="en">Topological Materials</span></h2>
+  <p class="dsub">本期 1 篇论文（漏收回补）：液氮温度以上的量子电阻标准</p>
+
+  <article class="item">
+    <div class="top"><span class="badge paper">论文</span><span class="chip">量子计量</span></div>
+    <h3><a href="https://arxiv.org/abs/2611.34069">Toward a quantum resistance standard above liquid nitrogen temperature</a><span class="zh">迈向液氮温度以上的量子电阻标准（CrOCl/石墨烯量子化霍尔）</span></h3>
+    <p class="sum">用 CrOCl 与单层石墨烯的界面电荷序耦合增强费米速度、形成稳健的朗道回旋能隙，配合室温安装的定制直流比较仪（DCC）测量：<b>50 K、12 T、直流 10 μA</b> 条件下，霍尔电阻相对 R_K/2 的偏差仅 <b>(15 ± 23) nΩ/Ω（相对不确定度 23 ppb）</b>；<b>100 K</b> 时量子化霍尔电阻相对不确定度 <b>2 ppm</b>。现行计量级量子化霍尔基准依赖 1–2 K 低温与约 10 T 强磁场，该平台有望把工作温区推进到液氮温度（77 K）以上、摆脱压缩机制冷——拓扑量子化输运向计量基准转化的代表性进展。</p>
+    <p class="meta">arXiv:<a href="https://arxiv.org/abs/2611.34069">2611.34069</a> · Kaining Yang et al. · v1 2026-11-25 · 属第 6 期公告批次（检索漏收），本期补收标注</p>
+  </article>
+</section>
+
+<!-- ============ 射频前端 ============ -->
+<section class="domain" data-key="rf" style="--accent:#ea580c">
+  <h2>射频前端 <span class="en">RF Front-End</span></h2>
+  <p class="dsub">本期窗口内无可收录条目</p>
+  <div class="empty">感恩节周（美国 11-26 感恩节）批次无射频硬件类论文（eess.SP 批次 21 篇逐条核对，physics.app-ph 区待下期复核）；厂商/期刊新闻因 Microwave Journal 403 与搜索服务 429 限流未能核实。EverythingRF 单源线索按既定规则（须厂商/分销商二次核实）不收。</div>
+</section>
+
+<!-- ============ 雷达 ============ -->
+<section class="domain" data-key="radar" style="--accent:#2563eb">
+  <h2>雷达 <span class="en">Radar</span></h2>
+  <p class="dsub">本期 2 条新闻（美东 11-26 晚间发布批次，北京 11-27 早间，窗口内沿）；arXiv 本批次无雷达论文（感恩节投稿枯竭）</p>
+
+  <article class="item">
+    <div class="top"><span class="badge news">新闻</span><span class="chip">防空雷达合同</span></div>
+    <h3><a href="https://www.executivebiz.com/articles/leidos-marine-corps-mradr-contract">Leidos Wins $40.8 Million U.S. Marine Corps Radar Contract (MRADR)</a><span class="zh">Leidos 获美海军陆战队 4080 万美元中程防空雷达（MRADR）合同</span></h3>
+    <p class="sum">美国防部合同公告渠道多源证实（ExecutiveBiz/WashingtonExec/Leidos 官网）：Leidos 获 <b>4080 万美元</b>合同，为美海军陆战队制造并保障 <b>14 套</b>中程防空雷达（MRADR），工作至 <b>2028 年 8 月</b>。该雷达提供 <b>360°</b> 全向空情监视，采用"低信号特征"设计以降低被侦测与打击概率；合同含可选条款，可对 2023 年以 <b>3200 万美元</b>获得的 4 套原型系统升级改装——新型地面防空雷达从原型走向批量列装的关键节点。</p>
+    <p class="meta">来源：<a href="https://www.executivebiz.com/articles/leidos-marine-corps-mradr-contract">ExecutiveBiz</a> · 2026-11-26（美东晚间发布，窗口内沿）</p>
+  </article>
+
+  <article class="item">
+    <div class="top"><span class="badge news">新闻</span><span class="chip">装备定型</span></div>
+    <h3><a href="https://www.embraer.com/media-center/en/?mediatype=NEWS&detail=34112">Embraer and Brazilian Army Complete Development and Operational Validation of the SABER M200 VIGILANTE Radar</a><span class="zh">巴西陆军 SABER M200 "哨兵"雷达完成研发与作战使用验证</span></h3>
+    <p class="sum">巴西航空工业公司（Embraer）在巴西利亚 Mostra BID 防务展宣布，与巴西陆军及陆军技术中心（CTEx）共同完成 SABER M200 VIGILANTE 战术雷达的研发周期与作战使用验证：早期预警与监视距离约 <b>200 km</b>（约 108 海里），采用巴西国产信号处理技术，可探测、跟踪与监视空中目标用于防空预警；系统<b>自带发电能力</b>、可陆路或空运快速部署，此前已在 TÍNIA、SAGITTA PRIMUS、PERSEU 等演训中验证。<b>第二部批产构型</b>正在生产，将率先列装陆军防空部队并向其他军种及国际客户推广。</p>
+    <p class="meta">来源：<a href="https://www.embraer.com/media-center/en/?mediatype=NEWS&detail=34112">Embraer 官网</a> · 2026-11-26（美东晚间发布，窗口内沿）</p>
+  </article>
+</section>
+
+</main>
+
+<footer>
+  多领域前沿资讯简报 · 第 7 期（2026-11-28）｜ 数据来源：arXiv、期刊发表信息与公开新闻检索，条目均附原文链接 ｜ 由 ZCode 在对话中按需生成<br>
+  <a href="index.html">返回索引</a> ｜ <a href="2026-11-27.html">上一期（第 6 期）</a>
+</footer>
+
+<script>
+(function(){
+  var secs = Array.prototype.slice.call(document.querySelectorAll('section.domain'));
+  var counts = {all: 0};
+  secs.forEach(function(s){
+    var n = s.querySelectorAll('.item').length;
+    counts[s.dataset.key] = n;
+    counts.all += n;
+  });
+  var btns = Array.prototype.slice.call(document.querySelectorAll('.tabs button'));
+  btns.forEach(function(b){
+    b.querySelector('.n').textContent = ' ' + counts[b.dataset.domain];
+    b.addEventListener('click', function(){
+      btns.forEach(function(x){ x.classList.toggle('active', x === b); });
+      secs.forEach(function(s){
+        s.style.display = (b.dataset.domain === 'all' || s.dataset.key === b.dataset.domain) ? '' : 'none';
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
